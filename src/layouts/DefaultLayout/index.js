@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 function DefaultLayout({ children }) {
   return (
@@ -9,6 +10,7 @@ function DefaultLayout({ children }) {
         <Sidebar />
         <div className="content">{children}</div>
       </div>
+      <Footer />
     </div>
   );
 }
